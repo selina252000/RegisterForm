@@ -1,0 +1,82 @@
+{
+  "user": [
+    {
+      "firstName": "Nishant",
+      "lastName": "Sharma",
+      "email": "nishant@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 1
+    },
+    {
+      "firstName": "selina",
+      "lastName": "darnal",
+      "email": "selina@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 2
+    },
+    {
+      "firstName": "selina",
+      "lastName": "darnal",
+      "email": "selina@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 3
+    },
+    {
+      "firstName": "Nishant",
+      "lastName": "Sharma",
+      "email": "nishant@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "agreement": true,
+      "id": 4
+    },
+    {
+      "firstName": "Nishant",
+      "lastName": "Sharma",
+      "email": "nishant@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "agreement": true,
+      "id": 5
+    },
+    {
+      "firstName": "Nishant",
+      "lastName": "Sharma",
+      "email": "nishant@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "agreement": true,
+      "id": 6
+    },
+    {
+      "firstName": "sada",
+      "lastName": "sadfsa",
+      "email": "sdfs@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "agreement": true,
+      "id": 7
+    },
+    {
+      "firstName": "sadfas",
+      "lastName": "dfs",
+      "email": "sadfsa@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "agreement": true,
+      "id": 8
+    },
+    {
+      "firstName": "Nishant",
+      "lastName": "Sharma",
+      "email": "nishant@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "agreement": true,
+      "id": 9
+    }
+  ]
+}

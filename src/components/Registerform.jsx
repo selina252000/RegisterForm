@@ -1,6 +1,17 @@
 import {Form,Button,Checkbox,Input, Row,Col} from "antd";
+import axios from "axios";
+import uuid from "react-uuid";
+import { Link, useNavigate } from "react-router-dom";
 
-function App() {
+function Registerform() {
+
+const navigate=useNavigate()
+const onFinish=(values)=>{
+    axios.post("http://localhost:4000/user",values).then(res=>console.log("Values has been posted")).catch(err=>console.log(err))
+    navigate("/login")
+	}
+	const id=uuid()
+	console.log(id)
   return (
     <>
     <Row>
@@ -10,6 +21,7 @@ function App() {
       autoComplete="off"
       labelCol={{span:10}} 
       wrapperCol={{span:14}}
+	  onFinish={onFinish}
       >
 
       <Form.Item 
@@ -103,16 +115,34 @@ function App() {
         <Input.Password placeholder="confirm your password"/>
       </Form.Item>
 
-      <Form.Item name ="agreement" wrapperCol={{span:24}}  hasFeedback>
-        {" "}
-        <Checkbox > Agree to  our <a href ='a'>Terms and condition</a>
+      <Form.Item 
+      name ="agreement"
+      wrapperCol={{span:24}}  
+      valuePropName="checked"
+      rules = {[
+        {
+          validator:(_,value)=>
+          value
+          ? Promise.resolve()
+          :Promise.reject("plz click on check box")
+        }
+    
+      ]}
+      >
+      
+        <Checkbox > I agree with <a href ='a'>Terms and condition</a>
         </Checkbox>
       </Form.Item>
-
+    
       <Form.Item  wrapperCol={{span:24}} >
         <Button block type ="primary" htmlType='submit'>
           Register
         </Button>
+      </Form.Item>
+
+      <Form.Item> 
+        Already have an account ?
+        <Link to="/login">signup</Link>
       </Form.Item>
 
       </Form>
@@ -120,6 +150,5 @@ function App() {
     </Row>
     </>
   );
-}
-
-export default App;
+    }
+export default Registerform;
