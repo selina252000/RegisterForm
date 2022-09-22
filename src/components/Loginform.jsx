@@ -1,9 +1,16 @@
 import React from 'react';
 import { Button, Checkbox, Form, Input ,Row,Col} from 'antd';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
+import {  useNavigate } from "react-router-dom";
 
 
 const Loginform =()=>{
+  const navigate=useNavigate()
+   const onFinish =()=>{
+
+    navigate("/DataTable")
+   }
+
     return (
         <>
         <Row>
@@ -11,6 +18,7 @@ const Loginform =()=>{
        <Form
       name="normal_login"
       className="login-form"
+      onFinish ={onFinish}
       initialValues={{
         remember: true,
       }}

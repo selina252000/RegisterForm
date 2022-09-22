@@ -25,36 +25,19 @@ const onFinish=(values)=>{
       >
 
       <Form.Item 
-      name ="firstName" 
-      label ="firstName"
+      name ="userName" 
+      label ="userName" 
       rules = {[
         {
           required:true,
-          message:"Enter your first  name",
-        },
-        {whitespace:true},
-        {min:3}
-
-      ]}
-       hasFeedback
-       >
-        <Input placeholder="Type your first name"/>
-      </Form.Item>
-
-      <Form.Item 
-      name ="lastName" 
-      label ="lastName" 
-      rules = {[
-        {
-          required:true,
-          message:"Enter your last  name",
+          message:"Enter your user  name",
         },
         {whitespace:true},
 
       ]}
       hasFeedback
       >
-        <Input placeholder="Type your last name"/>
+        <Input placeholder="Type your user name"/>
       </Form.Item>
 
       <Form.Item
