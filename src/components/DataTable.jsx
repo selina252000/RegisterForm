@@ -38,12 +38,8 @@ function DataTable() {
           ),
         },
       ];
-
-      console.log("----columns-----", columns[0]?.dataIndex)
-
-      console.log("---tableData-----", tableData)
   
-      
+    
       
     return (
         <>
